@@ -17,30 +17,54 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.042"
             android:id="@+id/txtCabecera"/>
     <ImageView
-            android:layout_width="321dp"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/tmntraph"
+            android:layout_width="299dp"
+            android:layout_height="297dp" app:srcCompat="@drawable/tmntraph"
             android:id="@+id/tortuga"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="45dp"
-            android:layout_marginStart="45dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp" app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/txtCabecera"/>
-    <RadioButton
-            android:text="leo"
-            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtCabecera"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.053"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <RadioGroup
+            android:layout_width="118dp"
             android:layout_height="wrap_content"
-            android:id="@+id/rb_leo" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="45dp"
-            android:layout_marginStart="45dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="184dp" android:layout_marginTop="8dp"
-            android:onClick="radiobuttonClick"
-            app:layout_constraintTop_toBottomOf="@+id/tortuga"/>
-    <RadioButton
-            android:text="don"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rb_don"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="185dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="121dp"
-            android:layout_marginRight="121dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/tortuga"/>
+            android:id="@+id/radiogroup" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.888">
+        <RadioButton
+                android:text="leo"
+                android:layout_width="77dp"
+                android:layout_height="43dp"
+                android:id="@+id/rb_leo"
+                android:onClick="radiobuttonClick"
+
+                tools:layout_editor_absoluteX="54dp" tools:layout_editor_absoluteY="483dp"/>
+        <RadioButton
+                android:text="don"
+                android:layout_width="83dp"
+                android:layout_height="43dp"
+                android:id="@+id/rb_don"
+                android:onClick="radiobuttonClick"
+                tools:layout_editor_absoluteY="483dp" tools:layout_editor_absoluteX="234dp"/>
+        <RadioButton
+                android:text="miguel"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:id="@+id/migel"
+                android:onClick="radiobuttonClick"
+                tools:layout_editor_absoluteY="591dp" tools:layout_editor_absoluteX="234dp"/>
+        <RadioButton
+                android:text="rafa"
+                android:layout_width="84dp"
+                android:layout_height="39dp"
+                android:id="@+id/rafa"
+                android:onClick="radiobuttonClick"
+                tools:layout_editor_absoluteY="591dp" tools:layout_editor_absoluteX="45dp"/>
+    </RadioGroup>
+
 
 </android.support.constraint.ConstraintLayout>
