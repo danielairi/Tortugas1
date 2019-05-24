@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 tortuga.setImageResource(R.drawable.tmntdon)
 
             } else {
-                if (view == rafa) {
+                if (view == rb_rafa) {
 
 
                     tortuga.setImageResource(R.drawable.tmntraph)
